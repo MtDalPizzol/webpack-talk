@@ -1,0 +1,38 @@
+{
+  "name": "webpack-talk",
+  "version": "1.0.0",
+  "description": "Webpack examples for the Google Developers Group talk.",
+  "main": "app/index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack",
+    "stats":  "webpack",
+    "serve": "cd build && serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "Matheus Dal'Pizzol",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.14",
+    "css-loader": "^0.26.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "favicons-webpack-plugin": "0.0.7",
+    "html-webpack-plugin": "^2.24.1",
+    "purifycss-webpack-plugin": "^2.0.3",
+    "require-dir": "^0.3.1",
+    "serve": "^1.4.0",
+    "stats-webpack-plugin": "^0.4.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-merge": "^1.0.2",
+    "webpack-validator": "^2.2.9"
+  },
+  "dependencies": {
+    "purecss": "^0.6.0",
+    "react": "^15.4.1"
+  }
+}
