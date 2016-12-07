@@ -11,11 +11,6 @@ var stats = {
 
   module: {
     loaders: [
-      // {
-      //   test: /\.css$/,
-      //   loaders: ['style', 'css?sourceMap'],
-      //   include: CONFIG.paths.styles
-      // }
       {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract('css?sourceMap'),

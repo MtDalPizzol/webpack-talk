@@ -14,7 +14,7 @@ const settings = {
   paths: {
     app: path.join(__dirname, '../app'),
     styles: [
-      path.join(__dirname, '../node_modules', 'purecss'),
+      path.join(__dirname, '../node_modules/primer-css/build/build.css'),
       path.join(__dirname, '../app/css', 'main.css')
     ],
     build: path.join(__dirname, '../build'),

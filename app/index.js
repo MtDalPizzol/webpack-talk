@@ -1,7 +1,25 @@
-require('react');
+$(document)
 
-var component = require('./component');
+  .ready(function() {
 
-document.body.appendChild(component());
+    var component = require('./component');
 
-console.log('test');
+    $('#result').html(component());
+
+  })
+
+  .on('click', '.btn', function() {
+
+    require.ensure('./async-component.js', function(require) {
+
+      var asyncComponent = require('./async-component.js');
+
+      $('#result').append($(asyncComponent()));
+
+    });
+
+    // var asyncComponent = require('./async-component.js');
+    //
+    // $('#result').append($(asyncComponent()));
+
+  });
