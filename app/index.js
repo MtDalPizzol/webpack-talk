@@ -1,25 +1,23 @@
+var HomeController = require('./controller/HomeController.js');
+
 $(document)
 
   .ready(function() {
 
-    var component = require('./component');
-
-    $('#result').html(component());
+    new HomeController();
 
   })
 
-  .on('click', '.btn', function() {
+  .on('click', '.menu-item', function(e) {
+    e.preventDefault();
 
-    require.ensure('./async-component.js', function(require) {
+    var page = _.upperFirst(_.camelCase($(this).attr('href')));
 
-      var asyncComponent = require('./async-component.js');
-
-      $('#result').append($(asyncComponent()));
-
+    /**
+     * The modules here will be dynamically loaded on demand
+     */
+    require(['./controller/' + page + 'Controller.js'], function(ctrl) {
+      new ctrl();
     });
-
-    // var asyncComponent = require('./async-component.js');
-    //
-    // $('#result').append($(asyncComponent()));
 
   });

@@ -7,8 +7,8 @@ const settings = {
   },
 
   stats: {
-    // exclude: []
-    exclude: [/node_modules[\\\/]react/]
+    exclude: []
+    // exclude: [/node_modules[\\\/]react/]
   },
 
   paths: {

@@ -14,10 +14,25 @@ const common = {
     path: CONFIG.paths.build,
     filename: '[name].js'
   },
+  module: {
+    loaders: [
+      {
+        test: /\.hbs$/,
+        loader: 'handlebars',
+        include: CONFIG.paths.app
+      },
+      {
+        test: /\.json$/,
+        loader: 'json',
+        include: CONFIG.paths.app
+      }
+    ]
+  },
   plugins: [
     new webpack.ProvidePlugin({
       $: 'jquery',
-      jQuery: 'jquery'
+      jQuery: 'jquery',
+      _: 'lodash'
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, '../app/index.html')
