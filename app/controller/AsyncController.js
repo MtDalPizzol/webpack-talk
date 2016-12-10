@@ -1,3 +1,5 @@
+console.log('async');
+
 function AsyncController() {
 
   this.view = require('../view/async.hbs');

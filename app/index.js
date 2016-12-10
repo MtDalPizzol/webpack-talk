@@ -12,12 +12,24 @@ $(document)
     e.preventDefault();
 
     var page = _.upperFirst(_.camelCase($(this).attr('href')));
+    // var file = './controller/' + page + 'Controller.js';
 
-    /**
-     * The modules here will be dynamically loaded on demand
-     */
-    require(['./controller/' + page + 'Controller.js'], function(ctrl) {
-      new ctrl();
+    require('bundle!./controller/' + page + 'Controller.js')(function(module) {
+      new module();
     });
+
+
+    // switch (page) {
+    //   case "Async":
+    //     require(['./controller/AsyncController.js'], function(module) {
+    //       new module();
+    //     });
+    //     break;
+    //   case "MultiDependencies":
+    //     require(['./controller/MultiDependenciesController.js'], function(module) {
+    //       new module();
+    //     });
+    //     break;
+    // }
 
   });

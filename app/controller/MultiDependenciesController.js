@@ -1,3 +1,5 @@
+console.log('multi');
+
 function MultiDependenciesController() {
 
   this.view = require('../view/multi-dependencies.hbs');
