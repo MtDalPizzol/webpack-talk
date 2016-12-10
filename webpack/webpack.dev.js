@@ -11,17 +11,9 @@ const dev = {
     loaders: [
       {
         test: /\.css$/,
-        loaders: ['style', 'css?sourceMap']
-      },
-      {
-        test: /\.scss$/,
-        loader: 'style!css?sourceMap!sass'
-      },
-      {
-        test: /\.less$/,
-        loader: 'style!css?sourceMap!less'
+        loader: 'style!css?sourceMap'
       }
-    ],
+    ]
   },
 
   plugins: [

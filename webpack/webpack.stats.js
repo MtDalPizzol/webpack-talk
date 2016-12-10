@@ -13,9 +13,10 @@ var stats = {
     loaders: [
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract('css?sourceMap')
+        loader: ExtractTextPlugin.extract('css?sourceMap'),
+        include: CONFIG.paths.styles
       }
-    ],
+    ]
   },
 
   plugins: [

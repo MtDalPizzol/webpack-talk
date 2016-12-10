@@ -25,6 +25,14 @@ const common = {
         test: /\.json$/,
         loader: 'json',
         include: CONFIG.paths.app
+      },
+      {
+        test: /\.scss$/,
+        loader: 'style!css?sourceMap!sass'
+      },
+      {
+        test: /\.less$/,
+        loader: 'style!css?sourceMap!less'
       }
     ]
   },
