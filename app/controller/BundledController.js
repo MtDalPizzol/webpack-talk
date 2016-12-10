@@ -1,8 +1,6 @@
-console.log('multi');
+function BundledController() {
 
-function MultiDependenciesController() {
-
-  this.view = require('../view/multi-dependencies.hbs');
+  this.view = require('../view/bundled.hbs');
 
   $(document).on('click', '#load-dependencies', function() {
 
@@ -26,4 +24,4 @@ function MultiDependenciesController() {
 
 }
 
-module.exports = MultiDependenciesController;
+module.exports = BundledController;

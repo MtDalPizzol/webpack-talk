@@ -32,7 +32,8 @@ const common = {
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
-      _: 'lodash'
+      _: 'lodash',
+      ROUTES: '../app/config/routes.js'
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, '../app/index.html')
