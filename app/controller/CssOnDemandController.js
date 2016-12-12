@@ -1,9 +1,14 @@
 function CssOnDemandController() {
 
-  require('!style!css?sourceMap!../css/css-on-demand.css');
   this.view = require('../view/css-on-demand.hbs');
 
-  $('#content').html(this.view());
+  this.loadCss = function() {
+    require(['!style!css?sourceMap!../css/css-on-demand.css']);
+  };
+
+  $('#content')
+    .html(this.view())
+    .on('click', '#load-css', this.loadCss);
 
 }
 

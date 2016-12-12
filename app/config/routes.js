@@ -4,4 +4,6 @@ module.exports = {
   'bundled-dependencies': 'BundledController',
   'css-on-demand': 'CssOnDemandController',
   'css-preprocessors': 'PreprocessorsController',
+  'static-json': 'StaticJsonController',
+  'file-dataurl': 'FileDataurlController'
 };

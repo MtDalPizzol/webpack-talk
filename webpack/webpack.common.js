@@ -33,6 +33,10 @@ const common = {
       {
         test: /\.less$/,
         loader: 'style!css?sourceMap!less'
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif|svg)$/,
+        loader: 'url?limit=10000'
       }
     ]
   },

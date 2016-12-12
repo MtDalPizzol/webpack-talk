@@ -8,3 +8,7 @@ body {
   margin-top: 32px;
   border-radius: 3px;
 }
+
+img {
+  max-width: 100%;
+}

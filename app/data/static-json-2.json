@@ -1,0 +1,22 @@
+[
+  {
+    "_id": "584eb23a93866829c9f07dac",
+    "isActive": true,
+    "picture": "http://placehold.it/32x32",
+    "age": 21,
+    "name": "Susan Meyers",
+    "email": "susanmeyers@scenty.com",
+    "phone": "+1 (866) 417-2892",
+    "address": "299 Cooke Court, Brownsville, South Carolina, 6212"
+  },
+  {
+    "_id": "584eb23a4dbb5b0d04189b38",
+    "isActive": true,
+    "picture": "http://placehold.it/32x32",
+    "age": 35,
+    "name": "Elba Wilson",
+    "email": "elbawilson@scenty.com",
+    "phone": "+1 (937) 580-2606",
+    "address": "998 Robert Street, Ripley, Marshall Islands, 5532"
+  }
+]

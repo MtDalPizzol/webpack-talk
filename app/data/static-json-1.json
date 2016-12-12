@@ -1,0 +1,32 @@
+[
+  {
+    "_id": "584eb1e75c03da2ba487f766",
+    "isActive": true,
+    "picture": "http://placehold.it/32x32",
+    "age": 23,
+    "name": "Shannon Christian",
+    "email": "shannonchristian@scenty.com",
+    "phone": "+1 (976) 504-2334",
+    "address": "483 Hendrickson Place, Lemoyne, Rhode Island, 612"
+  },
+  {
+    "_id": "584eb1e702a3a6bd756f48df",
+    "isActive": false,
+    "picture": "http://placehold.it/32x32",
+    "age": 27,
+    "name": "Lessie Blair",
+    "email": "lessieblair@scenty.com",
+    "phone": "+1 (958) 545-3465",
+    "address": "571 Ferry Place, Saticoy, Michigan, 8732"
+  },
+  {
+    "_id": "584eb1e72a7bf20e360eb110",
+    "isActive": false,
+    "picture": "http://placehold.it/32x32",
+    "age": 29,
+    "name": "Samantha Hays",
+    "email": "samanthahays@scenty.com",
+    "phone": "+1 (896) 553-2750",
+    "address": "643 Joralemon Street, Marienthal, New Jersey, 6212"
+  }
+]
