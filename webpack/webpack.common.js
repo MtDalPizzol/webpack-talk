@@ -49,8 +49,8 @@ const common = {
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, '../app/index.html')
-    }),
-    new FaviconsWebpackPlugin(path.join(CONFIG.paths.app, 'img/favicon.svg'))
+    })
+    // new FaviconsWebpackPlugin(path.join(CONFIG.paths.app, 'img/favicon.svg'))
   ]
 };
 
